@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body{
+    padding: 70px;
+    margin: 0px;
+    background-size: cover;
+    background-image: url(gambar7.jpg);
+}
+
+
+.menu{
+    padding-top:55px;
+    padding-left: 50%;
+}
+
+ul{
+    position: absolute;
+    transform:translate(-50%,-50%);
+    margin: 0;
+    padding: 8px 0;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-radius: 1px solid rgba(14, 161, 80, 0.3);
+}
+
+ul li:last-child{
+    border-right: none;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+
+ul li a .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000;
+}
+
+ul li a .icon .fa:last-child{
+color: #e91e63;
+}
+
+ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+}
+
+ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+ul li a .name span{
+    display: block;
+    position: relative;
+    color: rgb(158, 13, 13);
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+ul li a .name span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+}
+
+ul li a:hover .name span{
+    transform: rotateY(20px);
+}
+
+
+.container
+{
+    padding-top: 80px;
+	position: relative;
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .box
+{
+	position: relative;
+	width: 340px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.9s;
+}
+.container:hover .box
+{
+	opacity: 0.1;
+	transform: scale(0.9);
+	filter: blur(5px);
+}
+.container .box:hover
+{
+	opacity: 1;
+	transform: scale(1);
+	filter: blur(0);
+}
+.container .box:before
+{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	filter: url(#wavy);
+}
+.container .box:nth-child(1):before
+{
+	background: #ffa90c;
+}
+.container .box:nth-child(2):before
+{
+	background: #fff;
+}
+.container .box:nth-child(3):before
+{
+	background: #0f0;
+}
+.container .box .content
+{
+	position: absolute;
+	padding: 20px;
+	text-align: center;
+	color: #111;
+	transition: 0.5s;
+}
+.container .box .content h2
+{
+	font-size: 2em;
+	margin-bottom: -10px;
+}
+svg
+{
+	width: 0;
+	height: 0;
+}
+
+.text-box{
+    margin-top: 100px;
+    border-radius: 10px;
+    opacity: 0.9;
+    height: 400px;
+	position: relative;
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+}
+
+.text-box .boxx
+{
+	position: relative;
+	width: 1000px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.9s;
+}
+
+.text-box .boxx:hover
+{
+	opacity: 1;
+	transform: scale(1);
+	filter: blur(0);
+}
+.text-box .boxx:before
+{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	filter: url(#wavy);
+}
+
+.text-box .boxx:nth-child(1):before
+{
+	background: #4429db;
+}
+
+.text-box .boxx .content
+{
+	position: absolute;
+	padding: 20px;
+	text-align: center;
+	color: #111;
+	transition: 0.5s;
+}
+.text-box .boxx .content h2
+{
+	font-size: 2em;
+	margin-bottom: -10px;
+}
+svg
+{
+	width: 0;
+	height: 0;
+}
+
+
+
+.text-box .boxx .content p{
+    margin-left: 10px;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.content h2{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content h2 p{
+    color: rgb(148, 213, 224);
+}
+
+.form{
+	margin-top: 40px;
+	background-color: rgb(139, 194, 201);
+	width: 70%;
+	height: 700px;
+	border-radius: 15px;
+	border: 2px solid rgb(44, 40, 40);
+	opacity: 0.8;
+}
+
+.kita{
+	margin-right: 4px;
+	background-color:blue;
+}
+
+.kita:hover{
+	background-color: #dad61e;
+	color: red;
+}
+
+.kami{
+	margin-right: 4px;
+	background-color: blue;
+}
+
+.kami:hover{
+	background-color: #dad61e;
+	color: red;
+}

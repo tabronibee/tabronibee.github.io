@@ -1,0 +1,138 @@
+body{
+    padding: 70px;
+    margin: 0px;
+    background-size: cover;
+    background-image: url(gambar7.jpg);
+}
+
+.menu{
+    padding-top:55px;
+    padding-left: 50%;
+}
+
+ul{
+    position: absolute;
+    transform:translate(-50%,-50%);
+    margin: 0;
+    padding: 8px 0;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-radius: 1px solid rgba(14, 161, 80, 0.3);
+}
+
+ul li:last-child{
+    border-right: none;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+
+ul li a .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000;
+}
+
+ul li a .icon .fa:last-child{
+color: #e91e63;
+}
+
+ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+}
+
+ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+ul li a .name span{
+    display: block;
+    position: relative;
+    color: rgb(158, 13, 13);
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+ul li a .name span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+}
+
+ul li a:hover .name span{
+    transform: rotateY(20px);
+}
+
+
+.slide ul{
+    position: absolute;
+    top: 133%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.slide ul li{
+    list-style: none;
+}
+
+.slide ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;text-align: center;
+    line-height: 40px;
+    background-color: #353535;
+    color: #565656;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+}
+
+.slide ul li a:active,
+
+.slide ul li a:hover{
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255,224,27), 
+                 0 0 20px rgba(255,224,27),
+                 0 0 20px rgba(255,224,27),
+                 0 0 20px rgba(255,224,27),
+                 0 0 20px rgba(255,224,27),
+                 0 0 20px rgba(255,224,27);
+}
